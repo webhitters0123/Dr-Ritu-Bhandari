@@ -1,65 +1,36 @@
-/* Responsive Navbar */
-.navbar {
-    background-color: #fff;
-    border: none;
-    margin: 0;
-    border-radius: 0;
-    position: sticky;
-    margin-bottom: 10px;
-    height: 80px;
+/* Header and home hero */
+:root {
+    --ink: #35112b;
+    --muted-ink: #643c58;
+    --rose-light: #f7eeea;
+    --plum: #62264e;
 }
-.navbar-header .navbar-brand img {
-    height: 70px;
-    margin-bottom: 10px;
-}
-.navbar .navbar-right {
-    font-size: 14px;
-    margin-top: 20px;
-    color: #555;
-    padding: 15px 20px;
-}
-.navbar .navbar-right .glyphicon {
-    margin-right: 5px;
-}
+.navbar.site-navbar { min-height: 69px; margin: 0; border: 0; border-bottom: 1px solid #dfd4d0; border-radius: 0; background: var(--rose-light); }
+.navbar-inner { min-height: 69px; display: flex; align-items: center; justify-content: space-between; }
+.brand-name { height: auto; padding: 0; color: var(--ink); font-family: Georgia, 'Times New Roman', serif; font-size: 16px; }
+.brand-name span { color: #b64f68; }
+.site-nav-links { display: flex; gap: 28px; margin-left: auto; margin-right: 105px; }
+.site-nav-links a, .nav-phone { color: #2c202b; font-size: 12px; text-decoration: none; }
+.navbar-actions { display: flex; align-items: center; gap: 16px; }
+.nav-phone { font-weight: 700; }
+.nav-appointment, .hero-primary { display: inline-block; padding: 13px 18px; border-radius: 5px; color: #fff; background: var(--plum); font-size: 12px; font-weight: 700; text-decoration: none; }
 @media (max-width: 768px) {
     html{
         width:100%;
     }
-    .navbar {
-        height: auto;
-        text-align: center;
-        padding: 10px 0;
-        justify-content: center;
+    .navbar.site-navbar, .navbar-inner {
+        min-height: 0;
+        padding: 12px 15px;
     }
-
-    .navbar .container {
+    .navbar-inner {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 14px;
     }
-    .navbar-header .navbar-brand img{
-        text-align: center;
-        justify-content: center;
-        padding-left: 15px;
-    }
-
-    .navbar-header {
-        margin-bottom: 10px;
-        text-align: center;
-    }
-
-    .navbar .navbar-right {
-        text-align: center;
-    }
-
-    .navbar .navbar-right a {
-        display: block; /* Stack elements */
-        margin-top: 5px;
-        text-align: center;
-    }
-    .adw{
-        text-align: center;
-        padding-left: 15px;
+    .site-nav-links {
+        gap: 16px;
+        margin: 0;
     }
 }
 
@@ -70,38 +41,59 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.main-container {
-    display: flex; /* Use flexbox for alignment */
-    justify-content: space-between; /* Space out content and form */
-    align-items: flex-start; /* Align items at the top */
-    background-image: url('Images/12333.png'); /* Background image */
-    background-size: cover; /* Cover the entire container */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Avoid repeating the image */
-    width: 100%;
-    height: 550px; /* Fixed height */
-    box-sizing: border-box; /* Ensure padding doesn't affect size */
-    position: relative;
+.home-hero { min-height: 522px; display: flex; align-items: center; justify-content: space-between; gap: 50px; padding: 48px max(30px, calc((100% - 864px) / 2)); box-sizing: border-box; background: var(--rose-light); color: var(--ink); }
+.hero-content { max-width: 475px; }
+.hero-eyebrow { margin: 0 0 12px; color: #b94f67; font-size: 12px; font-weight: 700; }
+.hero-content h1 { margin: 0 0 18px; color: #310f31; font-family: Georgia, 'Times New Roman', serif; font-size: 40px; font-weight: 400; line-height: 1.18; }
+.hero-copy { max-width: 430px; margin: 0 0 27px; color: var(--muted-ink); font-size: 14px; line-height: 1.65; }
+.hero-actions { display: flex; gap: 13px; }
+.hero-primary { padding: 14px 22px; }
+.hero-secondary { padding: 12px 21px; border: 1px solid var(--plum); border-radius: 5px; color: var(--plum); font-size: 12px; text-decoration: none; }
+.hero-highlights { display: flex; margin-top: 32px; }
+.hero-highlights p { min-height: 69px; margin: 0; padding: 3px 10px; border-left: 1px solid #d7798b; color: #5e244c; font-size: 11px; line-height: 1.5; }
+.hero-visual { display: flex; align-items: center; justify-content: center; min-width: 380px; }
+.hero-location-image { display: block; width: 400px; height: 400px; max-width: 100%; }
+.appointment-wrap { padding: 45px 15px; background: #fff; }
+
+.about-clinic { padding: 76px 30px; background: #c43f6d; color: #fff; }
+.about-clinic-inner { max-width: 864px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 58px; }
+.about-clinic-copy { max-width: 430px; }
+.about-kicker { margin: 0 0 15px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: 13px; font-style: italic; }
+.about-clinic h2 { margin: 0 0 18px; color: #fff; font-family: Georgia, 'Times New Roman', serif; font-size: 27px; line-height: 1.5; }
+.about-clinic-copy > p:last-child { margin: 0; color: #fff; font-size: 13px; line-height: 1.6; }
+.about-clinic-details { padding: 20px 30px; border: 1px solid rgba(255,255,255,.4); border-radius: 15px; background: rgba(255,255,255,.08); }
+.about-clinic details { border-bottom: 1px solid rgba(255,255,255,.2); padding: 9px 0; }
+.about-clinic details:last-child { border-bottom: 0; }
+.about-clinic summary { cursor: pointer; color: #fff; font-size: 12px; line-height: 1.5; list-style: none; }
+.about-clinic summary::-webkit-details-marker { display: none; }
+.about-clinic summary::before { content: '+'; display: inline-block; width: 18px; color: #ffe3ea; font-size: 16px; font-weight: 700; }
+.about-clinic details[open] summary::before { content: '−'; }
+.about-clinic details p { margin: 8px 18px 4px; color: #fff; font-size: 11px; line-height: 1.6; }
+
+@media (max-width: 992px) {
+    .site-nav-links { margin-right: 30px; }
+    .home-hero { gap: 30px; padding-right: 30px; padding-left: 30px; }
+    .hero-location-image { width: 310px; height: 310px; }
+    .hero-visual { min-width: 300px; }
 }
 
-.content-section {
-    color: black;
-    max-width: 100%;
-    margin-top: 0; /* Reset top margin */
-    gap: 700px;
-}
-
-.content-section h1 {
-    font-size: 36px;
-    font-weight: bold;
-    color: #f20790; /* Pink heading */
-    margin-bottom: 10px;
-}
-
-.content-section h3 {
-    font-size: 26px;
-    margin-top: 10px;
-    margin-left: 90px;
+@media (max-width: 768px) {
+    .site-nav-links { flex-wrap: wrap; justify-content: center; }
+    .navbar-actions { flex-wrap: wrap; justify-content: center; }
+    .home-hero { min-height: 0; flex-direction: column; gap: 45px; padding: 55px 24px 65px; text-align: center; }
+    .hero-content { max-width: 475px; }
+    .hero-content h1 { font-size: 34px; }
+    .desktop-break { display: none; }
+    .hero-copy { margin-right: auto; margin-left: auto; }
+    .hero-actions, .hero-highlights { justify-content: center; }
+    .hero-highlights { text-align: left; }
+    .hero-visual { min-width: 0; }
+    .hero-location-image { width: 280px; height: 280px; }
+    .about-clinic { padding: 55px 24px; }
+    .about-clinic-inner { grid-template-columns: 1fr; gap: 32px; }
+    .about-clinic-copy { max-width: 540px; }
+    .about-clinic h2 { font-size: 28px; }
+    .form-section { max-width: 100%; box-sizing: border-box; }
 }
 
 .form-section {
@@ -110,7 +102,7 @@ body {
     border-radius: 10px;
     width: 350px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add shadow */
-    margin-top: 80px; /* Space from the top */    
+    margin: 0 auto;
 }
 
 .form-section h2 {

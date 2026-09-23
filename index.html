@@ -27,18 +27,19 @@
 </head>
 <body>
     <!--Navbar Section-->
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                    <img src="Images/Logo1.png" alt="Logo">
-                </a>
+    <nav class="navbar site-navbar">
+        <div class="container navbar-inner">
+            <a class="navbar-brand brand-name" href="#home">Dr. Ritu <span>Bhandari</span></a>
+            <div class="site-nav-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#about">Reviews</a>
+                <a href="#faqs">FAQ</a>
+                <a href="#visit">Visit</a>
             </div>
-            <div class="navbar-right">
-                <span class="glyphicon glyphicon-earphone adw"></span>
-                <a href="tel:7347081693">+91 73470-81693</a>&nbsp &nbsp
-                <span class="glyphicon glyphicon-envelope"></span>
-                <a href="mailto:dr.ritu.bhandari1@gmail.com">dr.ritu.bhandari1@gmail.com</a>
+            <div class="navbar-actions">
+                <a class="nav-phone" href="tel:7347081693">073470-81693</a>
+                <a class="nav-appointment" href="#appointment">Book Appointment</a>
             </div>
         </div>
     </nav>
@@ -48,33 +49,53 @@
 </a>
 
     <!--Form Section-->
-    <div class="container-fluid main-container">
-        <!-- Left Section -->
-        <div class="content-section">
-            <h1>Best Gynaecologist and Obstetrician in Zirakpur</h1>
-            <h3>Dr. Ritu Bhandari</h3>
+    <main class="home-hero" id="home">
+        <div class="hero-content">
+            <p class="hero-eyebrow">Gynaecologist &amp; Obstetrician · Zirakpur</p>
+            <h1>Women's health, treated<br class="desktop-break"> with time and attention</h1>
+            <p class="hero-copy">From your first period to menopause and every appointment in between — Dr. Ritu Bhandari offers personal, unhurried gynaecological and obstetric care in Zirakpur.</p>
+            <div class="hero-actions">
+                <a class="hero-primary" href="#appointment">Book an Appointment</a>
+                <a class="hero-secondary" href="tel:7347081693">Call the Clinic</a>
+            </div>
+            <div class="hero-highlights">
+                <p>Certified Lactation<br>Consultant &amp;<br>breastfeeding<br>specialist</p>
+                <p>Personalised, patient-<br>led treatment plans</p>
+                <p>Open six days a<br>week, Sunday by<br>appointment</p>
+            </div>
         </div>
-        <!-- Right Section -->
-        <div class="form-section appointment-form">
-            <h2>Book Appointment & Explore!</h2>
-            <form action="form.php" method="POST">
-                <input name="Name" type="text" class="form-control" placeholder="Name*" required>
-                <input name="Phone Number" type="text" class="form-control" placeholder="Phone Number*" required>
-                <input name="Email" type="email" class="form-control" placeholder="Email" required>
-            
-                <!-- CAPTCHA -->
-                <div class="g-recaptcha" 
-                data-sitekey="6Lc0pNMqAAAAAFkWAlFGLRKAjBlJwc7ZwAZSRvCb">
-                </div>
-            
-                <button type="submit" class="btn btn-pink">Book An Appointment</button>
-            </form>
-            
-            <p class="form-note">
-                *We respect your privacy and don't share your personal information with anyone.
-            </p>
+        <div class="hero-visual" aria-hidden="true">
+            <img class="hero-location-image" src="Images/hero-location.svg" alt="">
         </div>
-    </div> 
+    </main>
+    <section class="about-clinic" id="about">
+        <div class="about-clinic-inner">
+            <div class="about-clinic-copy">
+                <p class="about-kicker">About the clinic</p>
+                <h2>A gynaecologist who treats the<br class="desktop-break"> person, not just the visit</h2>
+                <p>Dr. Ritu Bhandari is dedicated to women's health at every stage of life — from adolescence through pregnancy, motherhood and menopause. Every treatment plan is built around the individual, with time to listen, educate and involve each patient in her own care.</p>
+            </div>
+            <div class="about-clinic-details">
+                <details open>
+                    <summary>Years of dedicated Gynaecology &amp; Obstetrics practice</summary>
+                    <p>Experienced care for routine check-ups, pregnancy support and complex gynaecological concerns, with every consultation kept personal and clear.</p>
+                </details>
+                <details>
+                    <summary>Certified Lactation Consultant, breastfeeding specialist</summary>
+                    <p>Practical, reassuring guidance for feeding, positioning and common breastfeeding challenges, so new mothers feel supported from the start.</p>
+                </details>
+                <details>
+                    <summary>Routine care, family planning &amp; complex conditions alike</summary>
+                    <p>From preventive screenings and contraception advice to PCOS, fibroids and menstrual care, treatment is planned around your needs and comfort.</p>
+                </details>
+                <details>
+                    <summary>A calm, welcoming clinic environment in Zirakpur</summary>
+                    <p>A respectful space where you can ask questions openly, understand your options and make healthcare decisions with confidence.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
     <!-- Book Now Button -->
     <a href="tel:7347081693" class="book-now-btn">Call Us</a>
     <!--Services--> 
@@ -222,7 +243,7 @@
         </div>
     </section>
     <!--Why Choose US-->
-    <div class="container my-5">
+    <div class="container my-5" id="why-choose">
         <div class="row align-items-center background-section">
             <!-- Image Section -->
             <div class="col-md-4 text-center">
@@ -331,7 +352,7 @@
         </div>
     </div>
     <!--Map-->
-    <div class="container">
+    <div class="container" id="visit">
         <div class="row">
             <div class="col-md-12">
                 <div class="map-container">

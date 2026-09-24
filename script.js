@@ -1,19 +1,39 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const scrollButtons = document.querySelectorAll(".scroll-to-form");
-    const formSection = document.querySelector(".appointment-form");
+    const modal = document.querySelector("#appointmentModal");
+    const modalPanel = modal?.querySelector(".appointment-modal-panel");
+    const closeButton = modal?.querySelector(".appointment-modal-close");
+    const appointmentTriggers = document.querySelectorAll(".nav-appointment, .hero-primary, .scroll-to-form");
 
-    if (scrollButtons.length > 0 && formSection) {
-        scrollButtons.forEach((button) => {
-            button.addEventListener("click", function (event) {
-                event.preventDefault();
-
-                formSection.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });
-            });
-        });
-    } else {
-        console.warn("Scroll buttons or form section not found. Check class names.");
+    if (!modal || !modalPanel || !closeButton) {
+        return;
     }
+
+    const openModal = (event) => {
+        event.preventDefault();
+        modal.hidden = false;
+        document.body.classList.add("modal-open");
+        closeButton.focus();
+    };
+
+    const closeModal = () => {
+        modal.hidden = true;
+        document.body.classList.remove("modal-open");
+    };
+
+    appointmentTriggers.forEach((trigger) => {
+        trigger.addEventListener("click", openModal);
+    });
+
+    closeButton.addEventListener("click", closeModal);
+    modal.addEventListener("click", (event) => {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && !modal.hidden) {
+            closeModal();
+        }
+    });
 });

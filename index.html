@@ -25,11 +25,12 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     
 </head>
-<body>
+<body id="top">
+
     <!--Navbar Section-->
     <nav class="navbar site-navbar">
         <div class="container navbar-inner">
-            <a class="navbar-brand brand-name" href="#home">Dr. Ritu <span>Bhandari</span></a>
+            <a class="navbar-brand brand-name" href="#top">Dr. Ritu <span>Bhandari</span></a>
             <div class="site-nav-links">
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
@@ -43,12 +44,13 @@
             </div>
         </div>
     </nav>
-<!--Sticky Whatsapp-->
-<a  class="whats-app" href="https://wa.link/mw8ora" target="_blank">
-    <i class="fa fa-whatsapp my-float"></i>
-</a>
 
-    <!--Form Section-->
+    <!--Sticky Whatsapp-->
+    <a  class="whats-app" href="https://wa.link/mw8ora" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <!--Hero Section-->
     <main class="home-hero" id="home">
         <div class="hero-content">
             <p class="hero-eyebrow">Gynaecologist &amp; Obstetrician · Zirakpur</p>
@@ -65,7 +67,7 @@
             </div>
         </div>
         <div class="hero-visual" aria-hidden="true">
-            <img class="hero-location-image" src="Images/hero-location.svg" alt="">
+            <img class="hero-location-image" src="Images/dr1.png" alt="">
         </div>
     </main>
     <section class="about-clinic" id="about">
@@ -76,19 +78,19 @@
                 <p>Dr. Ritu Bhandari is dedicated to women's health at every stage of life — from adolescence through pregnancy, motherhood and menopause. Every treatment plan is built around the individual, with time to listen, educate and involve each patient in her own care.</p>
             </div>
             <div class="about-clinic-details">
-                <details open>
+                <details name="about-details" open>
                     <summary>Years of dedicated Gynaecology &amp; Obstetrics practice</summary>
                     <p>Experienced care for routine check-ups, pregnancy support and complex gynaecological concerns, with every consultation kept personal and clear.</p>
                 </details>
-                <details>
+                <details name="about-details">
                     <summary>Certified Lactation Consultant, breastfeeding specialist</summary>
                     <p>Practical, reassuring guidance for feeding, positioning and common breastfeeding challenges, so new mothers feel supported from the start.</p>
                 </details>
-                <details>
+                <details name="about-details">
                     <summary>Routine care, family planning &amp; complex conditions alike</summary>
                     <p>From preventive screenings and contraception advice to PCOS, fibroids and menstrual care, treatment is planned around your needs and comfort.</p>
                 </details>
-                <details>
+                <details name="about-details">
                     <summary>A calm, welcoming clinic environment in Zirakpur</summary>
                     <p>A respectful space where you can ask questions openly, understand your options and make healthcare decisions with confidence.</p>
                 </details>
@@ -505,5 +507,22 @@
             </div>
         </div>
     </footer>
+
+    <div class="appointment-modal" id="appointmentModal" role="dialog" aria-modal="true" aria-labelledby="appointmentModalTitle" hidden>
+        <div class="appointment-modal-panel">
+            <button class="appointment-modal-close" type="button" aria-label="Close appointment form">&times;</button>
+            <h2 id="appointmentModalTitle">Book an Appointment</h2>
+            <p>Share your details and the clinic will contact you shortly.</p>
+            <form class="appointment-modal-form" action="form.php" method="post">
+                <label for="appointmentName">Name</label>
+                <input id="appointmentName" name="name" type="text" required>
+                <label for="appointmentPhone">Phone number</label>
+                <input id="appointmentPhone" name="phone" type="tel" required>
+                <label for="appointmentEmail">Email</label>
+                <input id="appointmentEmail" name="email" type="email" required>
+                <button type="submit">Submit Request</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

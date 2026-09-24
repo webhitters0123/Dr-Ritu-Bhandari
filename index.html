@@ -33,7 +33,35 @@
             <a class="navbar-brand brand-name" href="#top">Dr. Ritu <span>Bhandari</span></a>
             <div class="site-nav-links">
                 <a href="#about">About</a>
-                <a href="#services">Services</a>
+                <div class="services-dropdown">
+                    <a href="#services" class="services-trigger" aria-haspopup="true" aria-expanded="false">Services <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <div class="services-menu" aria-label="Services Menu">
+                        <div class="services-column">
+                            <h4>General Gynecological Care</h4>
+                            <a href="#services">Annual Well-Woman Exams</a>
+                            <a href="#services">Pap Smear &amp; HPV Testing</a>
+                            <a href="#services">Breast Exams</a>
+                            <a href="#services">STD/STI Testing &amp; Treatment</a>
+                            <a href="#services">Contraception Counseling</a>
+                        </div>
+                        <div class="services-column">
+                            <h4>Pregnancy &amp; Reproductive Health</h4>
+                            <a href="#services">Preconception Counseling</a>
+                            <a href="#services">Prenatal Care &amp; Pregnancy Monitoring</a>
+                            <a href="#services">High-Risk Pregnancy Management</a>
+                            <a href="#services">Postpartum Care</a>
+                            <a href="#services">Infertility Evaluation &amp; Treatment</a>
+                        </div>
+                        <div class="services-column">
+                            <h4>Women’s Health &amp; Treatments</h4>
+                            <a href="#services">PCOS Treatment</a>
+                            <a href="#services">Endometriosis Management</a>
+                            <a href="#services">Thyroid &amp; Hormonal Imbalance Treatment</a>
+                            <a href="#services">Uterine Fibroids Treatment</a>
+                            <a href="#services">Ovarian Cysts &amp; Pelvic Pain Care</a>
+                        </div>
+                    </div>
+                </div>
                 <a href="#about">Reviews</a>
                 <a href="#faqs">FAQ</a>
                 <a href="#visit">Visit</a>
@@ -70,32 +98,127 @@
             <img class="hero-location-image" src="Images/dr1.png" alt="">
         </div>
     </main>
+
+     <!--About Section-->
+    <!-- =========================
+     ABOUT CLINIC SECTION
+========================= -->
     <section class="about-clinic" id="about">
+
         <div class="about-clinic-inner">
+
+            <!-- LEFT: DOCTOR IMAGE -->
+            <div class="about-doctor">
+
+                <div class="doctor-image-bg"></div>
+
+                <img
+                    src="Images/Dr2.png"
+                    alt="Dr. Ritu Bhandari"
+                    class="about-doctor-image"
+                >
+
+            </div>
+
+
+            <!-- CENTER: ABOUT CONTENT -->
             <div class="about-clinic-copy">
-                <p class="about-kicker">About the clinic</p>
-                <h2>A gynaecologist who treats the<br class="desktop-break"> person, not just the visit</h2>
-                <p>Dr. Ritu Bhandari is dedicated to women's health at every stage of life — from adolescence through pregnancy, motherhood and menopause. Every treatment plan is built around the individual, with time to listen, educate and involve each patient in her own care.</p>
+
+                <span class="about-label">
+                    ABOUT THE CLINIC
+                </span>
+
+                <h2>
+                    A gynaecologist who treats the
+                    <span>person, not just the visit</span>
+                </h2>
+
+                <p>
+                    Dr. Ritu Bhandari is dedicated to women's health at every
+                    stage of life — from adolescence through pregnancy,
+                    motherhood and menopause. Every treatment plan is built
+                    around the individual, with time to listen, educate and
+                    involve each patient in her own care.
+                </p>
+
+                <p>
+                    With years of experience in Gynaecology and Obstetrics,
+                    she takes time to understand each patient's concerns,
+                    explain treatment options clearly and involve them in
+                    every step of their care.
+                </p>
+
             </div>
+
+
+            <!-- RIGHT: DETAILS / ACCORDION -->
             <div class="about-clinic-details">
+
                 <details name="about-details" open>
-                    <summary>Years of dedicated Gynaecology &amp; Obstetrics practice</summary>
-                    <p>Experienced care for routine check-ups, pregnancy support and complex gynaecological concerns, with every consultation kept personal and clear.</p>
+
+                    <summary>
+                        Years of dedicated Gynaecology &amp; Obstetrics practice
+                    </summary>
+
+                    <p>
+                        Experienced care for routine check-ups, pregnancy
+                        support and complex gynaecological concerns, with
+                        every consultation kept personal and clear.
+                    </p>
+
                 </details>
+
+
                 <details name="about-details">
-                    <summary>Certified Lactation Consultant, breastfeeding specialist</summary>
-                    <p>Practical, reassuring guidance for feeding, positioning and common breastfeeding challenges, so new mothers feel supported from the start.</p>
+
+                    <summary>
+                        Certified Lactation Consultant,
+                        breastfeeding specialist
+                    </summary>
+
+                    <p>
+                        Practical, reassuring guidance for feeding,
+                        positioning and common breastfeeding challenges,
+                        so new mothers feel supported from the start.
+                    </p>
+
                 </details>
+
+
                 <details name="about-details">
-                    <summary>Routine care, family planning &amp; complex conditions alike</summary>
-                    <p>From preventive screenings and contraception advice to PCOS, fibroids and menstrual care, treatment is planned around your needs and comfort.</p>
+
+                    <summary>
+                        Routine care, family planning &amp;
+                        complex conditions alike
+                    </summary>
+
+                    <p>
+                        From preventive screenings and contraception advice
+                        to PCOS, fibroids and menstrual care, treatment is
+                        planned around your needs and comfort.
+                    </p>
+
                 </details>
+
+
                 <details name="about-details">
-                    <summary>A calm, welcoming clinic environment in Zirakpur</summary>
-                    <p>A respectful space where you can ask questions openly, understand your options and make healthcare decisions with confidence.</p>
+
+                    <summary>
+                        A calm, welcoming clinic environment in Zirakpur
+                    </summary>
+
+                    <p>
+                        A respectful space where you can ask questions openly,
+                        understand your options and make healthcare decisions
+                        with confidence.
+                    </p>
+
                 </details>
+
             </div>
+
         </div>
+
     </section>
 
     <!-- Book Now Button -->
@@ -524,5 +647,6 @@
             </form>
         </div>
     </div>
+
 </body>
 </html>

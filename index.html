@@ -4,633 +4,421 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="U9sYsMBucdP0nEjW06fVL4Rau2osMqX_m9kkB3KnR1w" />
-    <title>Women's Health Design</title>
-    <link rel="icon" href="Images/Logo1.png">
+    <title>Dr. Ritu Bhandari | Gynaecologist &amp; Obstetrician in Zirakpur</title>
+    <meta name="description" content="Dr. Ritu Bhandari offers personal, unhurried gynaecological and obstetric care in Zirakpur — pregnancy care, PCOS, fibroids, menopause and more.">
+    <link rel="icon" href="Images/logo-mark.png">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L5K3E1TTKT"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-L5K3E1TTKT');
     </script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-    <script src="form.js"></script>
+    <link rel="stylesheet" href="css/styles.css?v=20250925b">
+    <script src="script.js?v=20250925b" defer></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    
 </head>
 <body id="top">
 
-    <!--Navbar Section-->
-    <nav class="navbar site-navbar">
-        <div class="container navbar-inner">
-            <a class="navbar-brand brand-name" href="#top">Dr. Ritu <span>Bhandari</span></a>
-            <div class="site-nav-links">
-                <a href="#about">About</a>
-                <div class="services-dropdown">
-                    <a href="#services" class="services-trigger" aria-haspopup="true" aria-expanded="false">Services <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                    <div class="services-menu" aria-label="Services Menu">
-                        <div class="services-column">
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#top"><img class="brand-logo" src="Images/Logo1.png" width="110" height="64" alt="Dr. Ritu Bhandari"></a>
+
+            <button class="nav-toggle" type="button" aria-controls="siteNav" aria-expanded="false" aria-label="Open menu">
+                <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+                <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+            </button>
+
+            <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+                <div class="nav-item">
+                    <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="servicesMenu">
+                        Services
+                        <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4.5l4 4 4-4"/></svg>
+                    </button>
+                    <div class="mega" id="servicesMenu">
+                        <div>
                             <h4>General Gynecological Care</h4>
-                            <a href="#services">Annual Well-Woman Exams</a>
-                            <a href="#services">Pap Smear &amp; HPV Testing</a>
-                            <a href="#services">Breast Exams</a>
-                            <a href="#services">STD/STI Testing &amp; Treatment</a>
-                            <a href="#services">Contraception Counseling</a>
+                            <a href="general-gynecological-care/annual-well-woman-exams/index.html">Annual Well-Woman Exams</a>
+                            <a href="general-gynecological-care/pap-smear-hpv-testing/index.html">Pap Smear &amp; HPV Testing</a>
+                            <a href="general-gynecological-care/breast-exams/index.html">Breast Exams</a>
+                            <a href="general-gynecological-care/std-sti-testing-treatment/index.html">STD/STI Testing &amp; Treatment</a>
+                            <a href="general-gynecological-care/contraception-birth-control/index.html">Contraception Counseling</a>
+                            <a href="general-gynecological-care/menstrual-disorders/index.html">Menstrual Disorders</a>
                         </div>
-                        <div class="services-column">
+                        <div>
                             <h4>Pregnancy &amp; Reproductive Health</h4>
-                            <a href="#services">Preconception Counseling</a>
-                            <a href="#services">Prenatal Care &amp; Pregnancy Monitoring</a>
-                            <a href="#services">High-Risk Pregnancy Management</a>
-                            <a href="#services">Postpartum Care</a>
-                            <a href="#services">Infertility Evaluation &amp; Treatment</a>
+                            <a href="pregnancy-reproductive-health/preconception-counseling/index.html">Preconception Counseling</a>
+                            <a href="pregnancy-reproductive-health/prenatal-care/index.html">Prenatal Care &amp; Monitoring</a>
+                            <a href="pregnancy-reproductive-health/high-risk-pregnancy/index.html">High-Risk Pregnancy</a>
+                            <a href="pregnancy-reproductive-health/postpartum-care/index.html">Postpartum Care</a>
+                            <a href="pregnancy-reproductive-health/infertility-treatment/index.html">Infertility Evaluation &amp; Treatment</a>
                         </div>
-                        <div class="services-column">
-                            <h4>Women’s Health &amp; Treatments</h4>
-                            <a href="#services">PCOS Treatment</a>
-                            <a href="#services">Endometriosis Management</a>
-                            <a href="#services">Thyroid &amp; Hormonal Imbalance Treatment</a>
-                            <a href="#services">Uterine Fibroids Treatment</a>
-                            <a href="#services">Ovarian Cysts &amp; Pelvic Pain Care</a>
+                        <div>
+                            <h4>Hormonal &amp; Menopause Care</h4>
+                            <a href="hormonal-menopause-care/pcos-treatment/index.html">PCOS Treatment</a>
+                            <a href="hormonal-menopause-care/endometriosis-treatment/index.html">Endometriosis Management</a>
+                            <a href="hormonal-menopause-care/hormonal-imbalance-treatment/index.html">Thyroid &amp; Hormonal Imbalance</a>
+                        </div>
+                        <div>
+                            <h4>Gynecological Conditions</h4>
+                            <a href="gynecological-conditions-treatments/fibroids-treatment/index.html">Fibroids Treatment</a>
+                            <a href="gynecological-conditions-treatments/ovarian-cysts-treatment/index.html">Ovarian Cysts Treatment</a>
+                            <a href="gynecological-conditions-treatments/pelvic-pain-treatment/index.html">Pelvic Pain Treatment</a>
+                            <a href="gynecological-conditions-treatments/urinary-incontinence-treatment/index.html">Urinary Incontinence Treatment</a>
+                            <a href="gynecological-conditions-treatments/vaginal-infections-treatment/index.html">Vaginal Infections Treatment</a>
+                            <a class="all-link" href="services/index.html">View all services →</a>
                         </div>
                     </div>
                 </div>
-                <a href="#about">Reviews</a>
+                <a href="#why-choose">Why Us</a>
+                <a href="#reviews">Reviews</a>
                 <a href="#faqs">FAQ</a>
                 <a href="#visit">Visit</a>
-            </div>
-            <div class="navbar-actions">
+            </nav>
+
+            <div class="header-actions">
                 <a class="nav-phone" href="tel:7347081693">073470-81693</a>
-                <a class="nav-appointment" href="#appointment">Book Appointment</a>
+                <a class="btn btn-primary btn-sm nav-appointment" href="#appointment"><span class="label-full">Book Appointment</span><span class="label-short">Book Now</span></a>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <!--Sticky Whatsapp-->
-    <a  class="whats-app" href="https://wa.link/mw8ora" target="_blank">
-        <i class="fa fa-whatsapp my-float"></i>
-    </a>
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="eyebrow">Gynaecologist &amp; Obstetrician · Zirakpur</p>
+                    <h1>Women's health, treated with time and attention</h1>
+                    <p class="hero-copy">From your first period to menopause and every appointment in between, Dr. Ritu Bhandari offers personal, unhurried gynaecological and obstetric care in Zirakpur.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary hero-primary" href="#appointment">Book an Appointment</a>
+                        <a class="btn btn-outline" href="tel:7347081693">Call the Clinic</a>
+                    </div>
+                    <ul class="hero-trust">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Certified Lactation Consultant</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Personalised treatment plans</li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Open six days a week</li>
+                    </ul>
+                </div>
+                <div class="hero-visual">
+                    <img class="hero-photo" src="Images/dr1.png" width="420" height="420" alt="Dr. Ritu Bhandari at her clinic" fetchpriority="high">
+                </div>
+            </div>
+        </section>
 
-    <!--Hero Section-->
-    <main class="home-hero" id="home">
-        <div class="hero-content">
-            <p class="hero-eyebrow">Gynaecologist &amp; Obstetrician · Zirakpur</p>
-            <h1>Women's health, treated<br class="desktop-break"> with time and attention</h1>
-            <p class="hero-copy">From your first period to menopause and every appointment in between — Dr. Ritu Bhandari offers personal, unhurried gynaecological and obstetric care in Zirakpur.</p>
-            <div class="hero-actions">
-                <a class="hero-primary" href="#appointment">Book an Appointment</a>
-                <a class="hero-secondary" href="tel:7347081693">Call the Clinic</a>
+
+        <!-- Services -->
+        <section class="section services" id="services">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">What we offer</span>
+                    <h2>Our Services</h2>
+                    <p>Complete gynaecological and obstetric care, all under one roof.</p>
+                </div>
+
+                <div class="service-group" id="general-care">
+                    <h3>General Gynecological Care</h3>
+                    <div class="service-grid">
+                        <a class="service-card" href="general-gynecological-care/annual-well-woman-exams/index.html"><img src="Images/Services/Well-Woman.png" width="84" height="84" alt="" loading="lazy"><span>Annual Well-Woman Exams</span></a>
+                        <a class="service-card" href="general-gynecological-care/pap-smear-hpv-testing/index.html"><img src="Images/Services/HPV.png" width="84" height="84" alt="" loading="lazy"><span>Pap Smear &amp; HPV Testing</span></a>
+                        <a class="service-card" href="general-gynecological-care/breast-exams/index.html"><img src="Images/Services/Breast.png" width="84" height="84" alt="" loading="lazy"><span>Breast Exams</span></a>
+                        <a class="service-card" href="general-gynecological-care/std-sti-testing-treatment/index.html"><img src="Images/Services/STD.png" width="84" height="84" alt="" loading="lazy"><span>STD/STI Testing &amp; Treatment</span></a>
+                        <a class="service-card" href="general-gynecological-care/contraception-birth-control/index.html"><img src="Images/Services/Contraception.png" width="84" height="84" alt="" loading="lazy"><span>Contraception &amp; Birth Control</span></a>
+                        <a class="service-card" href="general-gynecological-care/menstrual-disorders/index.html"><img src="Images/Services/Menstrual-Disorder.png" width="84" height="84" alt="" loading="lazy"><span>Menstrual Disorder Management</span></a>
+                    </div>
+                </div>
+
+                <div class="service-group" id="pregnancy-care">
+                    <h3>Pregnancy &amp; Reproductive Health</h3>
+                    <div class="service-grid">
+                        <a class="service-card" href="pregnancy-reproductive-health/preconception-counseling/index.html"><img src="Images/Services/Pregnancy-Counselling.png" width="84" height="84" alt="" loading="lazy"><span>Preconception Counseling</span></a>
+                        <a class="service-card" href="pregnancy-reproductive-health/prenatal-care/index.html"><img src="Images/Services/Prenatal-care.png" width="84" height="84" alt="" loading="lazy"><span>Prenatal Care &amp; Pregnancy Monitoring</span></a>
+                        <a class="service-card" href="pregnancy-reproductive-health/high-risk-pregnancy/index.html"><img src="Images/Services/High-risk.png" width="84" height="84" alt="" loading="lazy"><span>High-Risk Pregnancy Management</span></a>
+                        <a class="service-card" href="pregnancy-reproductive-health/postpartum-care/index.html"><img src="Images/Services/Postmartum-Care.png" width="84" height="84" alt="" loading="lazy"><span>Postpartum Care</span></a>
+                        <a class="service-card" href="pregnancy-reproductive-health/infertility-treatment/index.html"><img src="Images/Services/Infertility.png" width="84" height="84" alt="" loading="lazy"><span>Infertility Evaluation &amp; Treatment</span></a>
+                    </div>
+                </div>
+
+                <div class="service-group" id="hormonal-care">
+                    <h3>Hormonal &amp; Menopause Care</h3>
+                    <div class="service-grid">
+                        <a class="service-card" href="hormonal-menopause-care/pcos-treatment/index.html"><img src="Images/Services/PCOS.png" width="84" height="84" alt="" loading="lazy"><span>PCOS Treatment</span></a>
+                        <a class="service-card" href="hormonal-menopause-care/endometriosis-treatment/index.html"><img src="Images/Services/Endometriosis.png" width="84" height="84" alt="" loading="lazy"><span>Endometriosis Management</span></a>
+                        <a class="service-card" href="hormonal-menopause-care/hormonal-imbalance-treatment/index.html"><img src="Images/Services/Hormone-Imbalance.png" width="84" height="84" alt="" loading="lazy"><span>Thyroid &amp; Hormonal Imbalance Treatment</span></a>
+                    </div>
+                </div>
+
+                <div class="service-group" id="conditions">
+                    <h3>Gynecological Conditions &amp; Treatments</h3>
+                    <div class="service-grid">
+                        <a class="service-card" href="gynecological-conditions-treatments/fibroids-treatment/index.html"><img src="Images/Services/Febroids.png" width="84" height="84" alt="" loading="lazy"><span>Uterine Fibroids Treatment</span></a>
+                        <a class="service-card" href="gynecological-conditions-treatments/ovarian-cysts-treatment/index.html"><img src="Images/Services/Cyst.png" width="84" height="84" alt="" loading="lazy"><span>Ovarian Cysts Diagnosis &amp; Removal</span></a>
+                        <a class="service-card" href="gynecological-conditions-treatments/pelvic-pain-treatment/index.html"><img src="Images/Services/Pelvic-Pain.png" width="84" height="84" alt="" loading="lazy"><span>Pelvic Pain &amp; Pelvic Floor Therapy</span></a>
+                        <a class="service-card" href="gynecological-conditions-treatments/urinary-incontinence-treatment/index.html"><img src="Images/Services/Urinary-Incontinence.png" width="84" height="84" alt="" loading="lazy"><span>Urinary Incontinence Treatment</span></a>
+                        <a class="service-card" href="gynecological-conditions-treatments/vaginal-infections-treatment/index.html"><img src="Images/Services/Vaginal-Infections.png" width="84" height="84" alt="" loading="lazy"><span>Vaginal Infections Treatment</span></a>
+                    </div>
+                </div>
+
+                <div class="section-cta">
+                    <a class="btn btn-primary scroll-to-form" href="#appointment">Consult Now</a>
+                </div>
             </div>
-            <div class="hero-highlights">
-                <p>Certified Lactation<br>Consultant &amp;<br>breastfeeding<br>specialist</p>
-                <p>Personalised, patient-<br>led treatment plans</p>
-                <p>Open six days a<br>week, Sunday by<br>appointment</p>
+        </section>
+
+        <!-- Why choose -->
+        <section class="section feature" id="why-choose">
+            <div class="container feature-grid why-grid">
+                <div class="feature-media why-media">
+                    <div class="why-photo">
+                        <img src="Images/Dr2.png" width="433" height="370" alt="Dr. Ritu Bhandari" loading="lazy" decoding="async">
+                    </div>
+                    <div class="why-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+                        <div><strong>Certified Lactation Consultant</strong><small>Breastfeeding specialist</small></div>
+                    </div>
+                </div>
+                <div class="why-copy">
+                    <span class="eyebrow">Why choose me</span>
+                    <h2>Best <span class="highlight">Gynaecologist</span> in Zirakpur</h2>
+                    <p class="lead">As a trusted Gynaecologist in Zirakpur, I, Dr. Ritu Bhandari, am dedicated to providing the highest quality of care for women's health, at every stage of life from adolescence to menopause and beyond.</p>
+                    <ul class="why-points">
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg><div><strong>Personalised treatment plans</strong><p>Care centred on understanding each patient's unique needs, for the best possible results.</p></div></li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/></svg><div><strong>Complete range of services</strong><p>Routine check-ups, family planning, pregnancy care and treatment of fibroids, PCOS and endometriosis.</p></div></li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.2L4 21l1.8-5.4A8 8 0 1 1 21 12z"/></svg><div><strong>Compassionate, patient-centred approach</strong><p>Time to listen, educate and involve you in every treatment decision, so you feel confident at each step.</p></div></li>
+                        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7z"/><path d="M9 12l2 2 4-4"/></svg><div><strong>Long-term well-being</strong><p>Care that addresses today's concerns while promoting your health for years to come, in a calm, reassuring clinic.</p></div></li>
+                    </ul>
+                    <div class="feature-actions">
+                        <a class="btn btn-primary scroll-to-form" href="#appointment">Book an Appointment</a>
+                        <a class="btn btn-outline" href="tel:7347081693">Call 073470-81693</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="hero-visual" aria-hidden="true">
-            <img class="hero-location-image" src="Images/dr1.png" alt="">
-        </div>
+        </section>
+
+        <!-- Benefits -->
+        <section class="section benefits">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Key Benefits</h2>
+                </div>
+                <div class="benefit-grid">
+                    <div class="benefit"><img src="Images/Benfits/2.svg" width="88" height="88" alt="" loading="lazy"><p>Lesser Pain</p></div>
+                    <div class="benefit"><img src="Images/Benfits/7.svg" width="88" height="88" alt="" loading="lazy"><p>Lesser Pain Medication</p></div>
+                    <div class="benefit"><img src="Images/Benfits/8.svg" width="88" height="88" alt="" loading="lazy"><p>Cost Effective</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section class="section reviews" id="reviews">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Patient reviews</span>
+                    <h2>What patients say</h2>
+                    <p>Trusted by women across Zirakpur, Mohali and Chandigarh.</p>
+                </div>
+                <div class="rating-banner">
+                    <div class="rating-score">4.7</div>
+                    <div class="rating-meta">
+                        <div class="stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg></div>
+                        <p>Based on 308+ Google reviews</p>
+                    </div>
+                    <a class="btn btn-outline btn-sm" href="https://maps.google.com/?cid=11075068155601185906" target="_blank" rel="noopener">Read reviews on Google</a>
+                </div>
+                <!-- Sample reviews below: replace the quotes and names with real patient reviews. -->
+                <div class="review-grid">
+                    <article class="review-card">
+                        <div class="stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg></div>
+                        <p>"Dr. Ritu listened patiently to every concern during my pregnancy and explained each step clearly. I always left the clinic feeling reassured."</p>
+                        <footer><span class="review-avatar">P</span><div><strong>Priya S.</strong><small>Prenatal care</small></div></footer>
+                    </article>
+                    <article class="review-card">
+                        <div class="stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg></div>
+                        <p>"After struggling with PCOS for years, I finally got a treatment plan that actually fits my life. Very kind, very thorough and never in a hurry."</p>
+                        <footer><span class="review-avatar">N</span><div><strong>Neha K.</strong><small>PCOS treatment</small></div></footer>
+                    </article>
+                    <article class="review-card">
+                        <div class="stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg></div>
+                        <p>"The breastfeeding guidance made a huge difference in the first weeks with my baby. Practical advice and a genuinely caring doctor."</p>
+                        <footer><span class="review-avatar">A</span><div><strong>Anjali M.</strong><small>Postpartum care</small></div></footer>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Near you -->
+        <section class="section feature alt" id="near-you">
+            <div class="container feature-grid reverse">
+                <div>
+                    <span class="eyebrow">Care near you</span>
+                    <h2>Best <span class="highlight">Obstetrician &amp; Gynecologist</span> Near You</h2>
+                    <p class="subtitle">Dr. Ritu Bhandari</p>
+                    <p>When it comes to women's health, finding the right obstetrician and Gynaecologist is crucial for your well-being. Dr. Ritu Bhandari is widely regarded as one of the best obstetricians and Gynaecologists near you, offering expert care with a compassionate approach and personalized care for all stages of life.</p>
+                    <ul class="check-list">
+                        <li><b>Pregnancy Care:</b> Comprehensive prenatal care, delivery, and postpartum support.</li>
+                        <li><b>Routine Gynaecological Check-ups:</b> Regular screenings including PAP smears, pelvic exams, and breast exams.</li>
+                        <li><b>Family Planning &amp; Fertility Solutions:</b> Advice on contraception, fertility treatments, and family planning options.</li>
+                        <li><b>Menstrual Disorders:</b> Treatment for irregular periods, heavy bleeding, and other Gynaecological concerns.</li>
+                        <li><b>Fibroids Treatment:</b> Expertise in treating fibroids using advanced medication for quicker recovery.</li>
+                    </ul>
+                    <p>With a focus on patient comfort and trust, Dr. Ritu Bhandari ensures that every patient receives the highest level of care in a welcoming and professional environment.</p>
+                </div>
+                <div class="feature-media">
+                    <img class="feature-photo" src="Images/couple.jpg" width="960" height="811" alt="Expecting couple" loading="lazy" decoding="async">
+                </div>
+            </div>
+        </section>
+
+        <!-- Visit -->
+        <section class="section visit" id="visit">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Visit the clinic</span>
+                    <h2>Find Us in Zirakpur</h2>
+                </div>
+                <div class="visit-grid">
+                    <div class="info-card">
+                        <div>
+                            <h3>Address</h3>
+                            <p>122A, Ground Floor, Green Enclave Rd, near EcoKids School, Badal Colony, Zirakpur, Punjab 140603</p>
+                        </div>
+                        <div>
+                            <h3>Clinic Timings</h3>
+                            <div class="timing">
+                                <span>Monday – Saturday</span><span></span>
+                                <span>Morning</span><span>10:00 AM – 1:00 PM</span>
+                                <span>Evening</span><span>6:00 PM – 8:00 PM</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <a href="tel:7347081693">+91 73470-81693</a>
+                        </div>
+                        <p class="note">Sunday: by appointment only</p>
+                        <a class="btn btn-primary scroll-to-form" href="#appointment">Book an Appointment</a>
+                    </div>
+                    <div class="map-frame">
+                        <iframe title="Clinic location on Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3432.5092429054475!2d76.81295407557711!3d30.647785574625328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390feb308c82c275%3A0x99b28bcf2dd96c72!2sBest%20Gynaecologist%20In%20Zirakpur%20%7C%20Dr%20Ritu%20Bhandari!5e0!3m2!1sen!2sin!4v1737196656776!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section faq" id="faqs">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">FAQ</span>
+                    <h2>Still have <span class="highlight">doubts?</span></h2>
+                    <p>We have answered some of the frequent questions for you.</p>
+                </div>
+                <div class="faq-list">
+                    <details>
+                        <summary>At what point should I see a gynecologist?</summary>
+                        <p>You should see a Gynecologist if you have concerns about your menstrual cycle, pelvic pain, sexual health, fertility, or you want to plan pregnancy.</p>
+                    </details>
+                    <details>
+                        <summary>How many weeks pregnant should you see the gynecologist?</summary>
+                        <p>You should see a gynecologist as soon as you find out you're pregnant, ideally around 4–5 weeks. Early consultation helps avoid many critical situations, and early prenatal care helps monitor your health and the baby's development throughout the pregnancy.</p>
+                    </details>
+                    <details>
+                        <summary>Is it common to have irregular periods?</summary>
+                        <p>Yes, it's common to have irregular periods, especially in the first few years after puberty or as you approach menopause. Stress, weight changes, exercise, and hormonal imbalances can also cause irregular periods. If your periods are consistently irregular or you experience other symptoms, like heavy or very light flow, it's a good idea to see a gynecologist.</p>
+                    </details>
+                    <details>
+                        <summary>Are irregular periods normal?</summary>
+                        <p>Occasional irregular cycles are common, but persistent irregularity could indicate hormonal imbalance, PCOS, or other conditions.</p>
+                    </details>
+                    <details>
+                        <summary>Do irregular periods mean infertility?</summary>
+                        <p>Irregular periods don't necessarily mean infertility, but they can sometimes indicate underlying issues like hormonal imbalances or conditions like PCOS that may affect fertility. If you're concerned, consult a gynecologist to identify the cause and explore treatment options.</p>
+                    </details>
+                    <details>
+                        <summary>Can women suffering from PCOS get pregnant?</summary>
+                        <p>Yes, women with PCOS can get pregnant, but they may face challenges due to irregular ovulation. With treatment to regulate ovulation, many women with PCOS conceive successfully.</p>
+                    </details>
+                    <details>
+                        <summary>What is the test for infertility evaluation?</summary>
+                        <p>Infertility evaluation typically involves ovulation tests, hormone testing, semen analysis, ultrasound, and sometimes HSG or laparoscopy to assess reproductive health.</p>
+                    </details>
+                    <details>
+                        <summary>What is the best postpartum care?</summary>
+                        <p>The best postpartum care includes regular check-ups, monitoring physical and emotional health, breastfeeding support, and guidance on nutrition, exercise, and family planning. It's important to address any concerns early for a smooth recovery.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+            <div class="container cta-inner">
+                <div>
+                    <h2>Your health deserves time.</h2>
+                    <p>Book a consultation with Dr. Ritu Bhandari in Zirakpur.</p>
+                </div>
+                <div class="cta-actions">
+                    <a class="btn btn-light scroll-to-form" href="#appointment">Book an Appointment</a>
+                    <a class="btn btn-ghost" href="tel:7347081693">Call 073470-81693</a>
+                </div>
+            </div>
+        </section>
     </main>
 
-     <!--About Section-->
-    <!-- =========================
-     ABOUT CLINIC SECTION
-========================= -->
-    <section class="about-clinic" id="about">
-
-        <div class="about-clinic-inner">
-
-            <!-- LEFT: DOCTOR IMAGE -->
-            <div class="about-doctor">
-
-                <div class="doctor-image-bg"></div>
-
-                <img
-                    src="Images/Dr2.png"
-                    alt="Dr. Ritu Bhandari"
-                    class="about-doctor-image"
-                >
-
-            </div>
-
-
-            <!-- CENTER: ABOUT CONTENT -->
-            <div class="about-clinic-copy">
-
-                <span class="about-label">
-                    ABOUT THE CLINIC
-                </span>
-
-                <h2>
-                    A gynaecologist who treats the
-                    <span>person, not just the visit</span>
-                </h2>
-
-                <p>
-                    Dr. Ritu Bhandari is dedicated to women's health at every
-                    stage of life — from adolescence through pregnancy,
-                    motherhood and menopause. Every treatment plan is built
-                    around the individual, with time to listen, educate and
-                    involve each patient in her own care.
-                </p>
-
-                <p>
-                    With years of experience in Gynaecology and Obstetrics,
-                    she takes time to understand each patient's concerns,
-                    explain treatment options clearly and involve them in
-                    every step of their care.
-                </p>
-
-            </div>
-
-
-            <!-- RIGHT: DETAILS / ACCORDION -->
-            <div class="about-clinic-details">
-
-                <details name="about-details" open>
-
-                    <summary>
-                        Years of dedicated Gynaecology &amp; Obstetrics practice
-                    </summary>
-
-                    <p>
-                        Experienced care for routine check-ups, pregnancy
-                        support and complex gynaecological concerns, with
-                        every consultation kept personal and clear.
-                    </p>
-
-                </details>
-
-
-                <details name="about-details">
-
-                    <summary>
-                        Certified Lactation Consultant,
-                        breastfeeding specialist
-                    </summary>
-
-                    <p>
-                        Practical, reassuring guidance for feeding,
-                        positioning and common breastfeeding challenges,
-                        so new mothers feel supported from the start.
-                    </p>
-
-                </details>
-
-
-                <details name="about-details">
-
-                    <summary>
-                        Routine care, family planning &amp;
-                        complex conditions alike
-                    </summary>
-
-                    <p>
-                        From preventive screenings and contraception advice
-                        to PCOS, fibroids and menstrual care, treatment is
-                        planned around your needs and comfort.
-                    </p>
-
-                </details>
-
-
-                <details name="about-details">
-
-                    <summary>
-                        A calm, welcoming clinic environment in Zirakpur
-                    </summary>
-
-                    <p>
-                        A respectful space where you can ask questions openly,
-                        understand your options and make healthcare decisions
-                        with confidence.
-                    </p>
-
-                </details>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Book Now Button -->
-    <a href="tel:7347081693" class="book-now-btn">Call Us</a>
-    <!--Services--> 
-    <section class="services-section" id="services">
+    <!-- Footer -->
+    <footer class="site-footer">
         <div class="container">
-            <h2>Services</h2>
-            <h3><b>General Gynecological Care</b></h3>
-            <br>
-                <div class="row justify-content-center">
-                <!-- First Row with 5 Items -->
-                <div class="col-xs-4 col-sm-2">
-                    <div class="services-item">
-                        <img src="Images/Services/Well-Woman.png" alt="Annual Well-Woman Exams">
-                        <p class="abc">Annual Well-Woman Exams</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="Images/Logo1.png" width="150" height="87" alt="Women Care Clinic" loading="lazy">
+                    <p>Personal, unhurried gynaecological and obstetric care for women at every stage of life.</p>
+                    <div class="social">
+                        <a href="https://www.instagram.com/drritubhandari/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+                        <a href="https://www.facebook.com/womencarecliniczirakpur" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.5-1.5h1.4V4.9c-.3 0-1.1-.1-2.1-.1-2.1 0-3.6 1.3-3.6 3.7V11H8.2v3h2.5v7h2.8z"/></svg></a>
                     </div>
                 </div>
-                <div class="col-xs-4 col-sm-2">
-                    <div class="services-item">
-                        <img src="Images/Services/HPV.png" alt="Pap Smear & HPV Testing">
-                        <p class="abc">Pap Smear & HPV Testing</p>
-                    </div>
-                </div>
-                <div class="col-xs-4 col-sm-2">
-                    <div class="services-item">
-                        <img src="Images/Services/Breast.png" alt="Breast Exams">
-                        <p class="abc">Breast Exams</p>
-                    </div>
-                </div>
-                <div class="col-xs-4 col-sm-2">
-                    <div class="services-item">
-                        <img src="Images/Services/STD.png" alt="STD/STI Testing & Treatment">
-                        <p class="abc">STD/STI Testing & Treatment</p>
-                    </div>
-                </div>
-                <div class="col-xs-4 col-sm-2">
-                    <div class="services-item">
-                        <img src="Images/Services/Contraception.png" alt="Contraception Counseling & Birth Control Options">
-                        <p class="abc">Contraception Counseling & Birth Control Options</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <!-- Second Row with Remaining Items -->
-                <div class="col-xs-4 col-sm-2">
-                    <div class="services-item">
-                        <img src="Images/Services/Menstrual-Disorder.png" alt="Menstrual Disorder Management">
-                        <p class="abc">Menstrual Disorder Management</p>
-                    </div>
-                </div>
-            </div>
-            <h3><b>Pregnancy & Reproductive Health</b></h3>
-            <br>
-            <div class="row justify-content-center">
-                <!-- First Row with 5 Items -->
-                <div class="col-xs-4 col-sm-2">
-                    <div class="services-item">
-                        <img src="Images/Services/Pregnancy-Counselling.png" alt="Preconception Counseling">
-                        <p class="abc">Preconception Counseling</p>
-                    </div>
-                </div>
-                <div class="col-xs-4 col-sm-2">
-                    <div class="services-item">
-                        <img src="Images/Services/Prenatal-care.png" alt="Prenatal Care & Pregnancy Monitoring">
-                        <p class="abc">Prenatal Care & Pregnancy Monitoring</p>
-                    </div>
-                </div>
-                <div class="col-xs-4 col-sm-2">
-                    <div class="services-item">
-                        <img src="Images/Services/High-risk.png" alt="High-Risk Pregnancy Management">
-                        <p class="abc">High-Risk Pregnancy Management</p>
-                    </div>
-                </div>
-                <div class="col-xs-4 col-sm-2">
-                    <div class="services-item">
-                        <img src="Images/Services/Postmartum-Care.png" alt="Postpartum Care">
-                        <p class="abc">Postpartum Care</p>
-                    </div>
-                </div>
-                <div class="col-xs-4 col-sm-2">
-                    <div class="services-item">
-                        <img src="Images/Services/Infertility.png" alt="Infertility Evaluation & Treatment">
-                        <p class="abc">Infertility Evaluation & Treatment</p>
-                    </div>
-                </div>
-            </div>
-            <h3><b>Hormonal & Menopause Care</b></h3>
-            <br>
-            <div class="row justify-content-center">
-                <!-- First Row with 5 Items -->
-                <div class="col-xs-4 col-sm-2">
-                    <div class="services-item">
-                        <img src="Images/Services/PCOS.png" alt="PCOS Treatment">
-                        <p class="abc">PCOS Treatment</p>
-                    </div>
-                </div>
-                <div class="col-xs-4 col-sm-2">
-                    <div class="services-item">
-                        <img src="Images/Services/Endometriosis.png" alt="Endometriosis Management">
-                        <p class="abc">Endometriosis Management</p>
-                    </div>
-                </div>
-                <div class="col-xs-4 col-sm-2">
-                    <div class="services-item">
-                        <img src="Images/Services/Hormone-Imbalance.png" alt="Thyroid & Hormonal Imbalance Treatment">
-                        <p class="abc">Thyroid & Hormonal Imbalance Treatment</p>
-                    </div>
-                </div>
-            </div>
-            <h3><b>Gynecological Conditions & Treatments</b></h3>
-            <br>
-            <div class="row justify-content-center">
-                <!-- First Row with 5 Items -->
-                <div class="col-xs-4 col-sm-2">
-                    <div class="services-item">
-                        <img src="Images/Services/Febroids.png" alt="Uterine Fibroids Treatment">
-                        <p class="abc">Uterine Fibroids Treatment</p>
-                    </div>
-                </div>
-                <div class="col-xs-4 col-sm-2">
-                    <div class="services-item">
-                        <img src="Images/Services/Cyst.png" alt="Ovarian Cysts Diagnosis & Removal">
-                        <p class="abc">Ovarian Cysts Diagnosis & Removal</p>
-                    </div>
-                </div>
-                <div class="col-xs-4 col-sm-2">
-                    <div class="services-item">
-                        <img src="Images/Services/Pelvic-Pain.png" alt="Pelvic Pain & Pelvic Floor Therapy">
-                        <p class="abc">Pelvic Pain & Pelvic Floor Therapy</p>
-                    </div>
-                </div>
-                <div class="col-xs-4 col-sm-2">
-                    <div class="services-item">
-                        <img src="Images/Services/Urinary-Incontinence.png" alt="Urinary Incontinence Treatment">
-                        <p class="abc">Urinary Incontinence Treatment</p>
-                    </div>
-                </div>
-                <div class="col-xs-4 col-sm-2">
-                    <div class="services-item">
-                        <img src="Images/Services/Vaginal-Infections.png" alt="Vaginal Infections Treatment">
-                        <p class="abc">Vaginal Infections Treatment</p>
-                    </div>
-                </div>
-            </div>
-            <button class="btn-consult scroll-to-form">Consult Now</button>
-        </div>
-    </section>
-    <!--Why Choose US-->
-    <div class="container my-5" id="why-choose">
-        <div class="row align-items-center background-section">
-            <!-- Image Section -->
-            <div class="col-md-4 text-center">
-                <img src="Images/Dr2.png" alt="Doctor" class="deg">
-                <p class="bed"><b>I am a Certified Lactational Consultant <br>(Breast Feeding Speacialist)</b></p>
-            </div>
-            <!-- Text Section -->
-            <div class="col-md-8">
-                <h2 class="mb-4">Best <span class="abc">Gynaecologist </span>in Zirakpur | Dr. Ritu Bhandari – Why Choose Me</h2>
-                <p>
-                    As a trusted Gynaecologist in Zirakpur, I, Dr. Ritu Bhandari, am dedicated to providing the highest 
-                    quality of care for women’s health. With years of experience in the field of Gynaecology, I offer expert 
-                    services for all stages of a woman’s life, from adolescence to menopause and beyond. My approach is 
-                    centered on understanding each patient’s unique needs, ensuring a personalized treatment plan for optimal 
-                    results.
-                </p>
-                <p>
-                    I specialize in a wide range of services, including routine check-ups, family planning, pregnancy care, 
-                    and management of Gynaecological conditions like fibroids, PCOS, and endometriosis. My goal is to provide 
-                    comprehensive care that not only addresses your immediate health concerns but also promotes long-term 
-                    well-being.
-                </p>
-                <p>
-                    What sets me apart is my compassionate, patient-centered approach. I take the time to listen, educate, 
-                    and involve my patients in their treatment decisions, ensuring they feel comfortable and confident every 
-                    step of the way. With a focus on the latest medical advancements, pregnancy and Gynaecological facilities, I aim 
-                    to provide the best care in a comfortable and reassuring environment. Choose Dr. Ritu Bhandari for your 
-                    Gynaecological needs and experience the difference in care and attention
-                </p>
-            </div>
-        </div>
-        <div class="container1">
-            <div class="center1">
-                <button class="btn-consult scroll-to-form">Book an Appointment</button>
-            </div>
-          </div>
-    </div>
-    <!--Benefits-->
-    <section class="services-section">
-        <div class="container">
-            <h2>Key benefits</h2>
-            <div class="row justify-content-center">
-                <!-- First Row with 5 Items -->
-                
-                <div class="col-xs-4 col-sm-2">
-                    <div class="services-item">
-                        <img src="Images/Benfits/2.svg" alt="Lesser Pain">
-                        <p>Lesser Pain</p>
-                    </div>
-                </div>           
-                <div class="col-xs-4 col-sm-2">
-                    <div class="services-item">
-                        <img src="Images/Benfits/7.svg" alt="Lesser pain Medication">
-                        <p>Lesser pain Medication</p>
-                    </div>
-                </div>
-                <div class="col-xs-4 col-sm-2">
-                    <div class="services-item">
-                        <img src="Images/Benfits/8.svg" alt="Cost effective">
-                        <p>Cost effective</p>
-                    </div>
-                </div>
-                
-            </div>
-            <button class="btn-consult scroll-to-form">Consult Now</button>
-        </div>
-    </section>
-    <!--About Us-->
-    <div class="container my-5">
-        <div class="row align-items-justify">
-            <!-- Text Section -->
-            <div class="col-md-6 justify-content-center hez">
-                <h1>Best <span class="abc">Obstetrician & Gynecologist</span> Near You </h1>
-                <h3 class="text-muted">Dr. Ritu Bhandari</h3>
-                <p>
-                    When it comes to women’s health, finding the right obstetrician and Gynaecologist is crucial for your 
-                    well-being. Dr. Ritu Bhandari is widely regarded as one of the best obstetricians and Gynaecologists 
-                    near you, offering expert care with a compassionate approach. With years of experience in handling a wide 
-                    range of women's health concerns, Dr. Ritu provides personalized care for all stages of life, from 
-                    adolescence to menopause.
-                </p>
-                <p>Dr. Ritu specializes in various services, including:
+                <div>
+                    <h4>Services</h4>
                     <ul>
-                        <li><b>Pregnancy Care: </b>Comprehensive prenatal care, delivery, and postpartum support.</li>
-                        <li><b>Routine Gynaecological Check-ups: </b>Regular screenings for reproductive health, including PAP smears, pelvic exams, and breast exams.</li>
-                        <li><b>Family Planning & Fertility Solutions: </b>Advice on contraception, fertility treatments, and family planning options.</li>
-                        <li><b>Menstrual Disorders: </b>Treatment for conditions like irregular periods, heavy bleeding, and other Gynaecological concerns.</li>
-                        <li><b>Fibroids Treatment: </b>Expertise in treatment of fibroids using advanced medication for quiker recovery.</li>
+                        <li><a href="#general-care">General Gynaecological Care</a></li>
+                        <li><a href="#pregnancy-care">Pregnancy &amp; Reproductive Health</a></li>
+                        <li><a href="#hormonal-care">Hormonal &amp; Menopause Care</a></li>
+                        <li><a href="#conditions">Gynaecological Conditions</a></li>
+                        <li><a href="services/index.html">All services</a></li>
                     </ul>
-                </p>
-                <p>
-                    With a focus on patient comfort and trust, Dr. Ritu Bhandari ensures that every patient receives the highest level of care in a 
-                    welcoming and professional environment. Choose Dr. Ritu Bhandari for your obstetric and Gynaecological needs and experience the 
-                    difference in care.
-                </p>
-            </div>
-            <!-- Image Section -->
-            <div class="col-md-6 position-relative image-container">
-                <img src="Images/couple.png" alt="Couple" class="img-fluid">
-            </div>
-        </div>
-        <div class="container1">
-            <div class="center1">
-                <button class="btn-consult scroll-to-form">Book an Appointment</button>
-            </div>
-        </div>
-    </div>
-    <!--Map-->
-    <div class="container" id="visit">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3432.5092429054475!2d76.81295407557711!3d30.647785574625328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390feb308c82c275%3A0x99b28bcf2dd96c72!2sBest%20Gynaecologist%20In%20Zirakpur%20%7C%20Dr%20Ritu%20Bhandari!5e0!3m2!1sen!2sin!4v1737196656776!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#why-choose">Why choose us</a></li>
+                        <li><a href="#faqs">FAQ</a></li>
+                        <li><a href="#visit">Visit</a></li>
+                        <li><a href="#appointment" class="scroll-to-form">Book an appointment</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>122A, Ground Floor, Green Enclave Rd, Badal Colony, Zirakpur, Punjab 140603</li>
+                        <li><a href="tel:7347081693">+91 73470-81693</a></li>
+                        <li>Mon–Sat: 10 AM – 1 PM, 6 PM – 8 PM</li>
+                        <li>Sunday: appointments only</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="container1">
-        <div class="center1">
-            <button class="btn-consult scroll-to-form">Consult Now</button>
-        </div>
-    </div>
-    <!--FAQ-->
-    <div class="container faq-section" id="faqs">
-        <h2 style="margin-bottom: 30px;">Still have <span style="color:#f20790">Doubts?</span></h2>
-        <p style="text-align: center; font-size: 16px">We have answered some of the frequent questions for you!</p>
-        <div class="panel-group" id="faqAccordion">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq1">At what point should I see a gynecologist?</a>
-                    </h4>
-                </div>
-                <div id="faq1" class="panel-collapse collapse">
-                    <div class="panel-body">You should see a Gynecologist if you have concerns about your menstrual cycle, pelvic pain, sexual health, fertility, or you want to plan pregnancy.</div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq2">How many weeks pregnant should you see the gynecologist?</a>
-                    </h4>
-                </div>
-                <div id="faq2" class="panel-collapse collapse">
-                    <div class="panel-body">You should see a gynecologist as soon as you find out you're pregnant, ideally around 4-5 weeks.Early consultation helps in avoiding many critial situations. Early prenatal care helps monitor your health and the baby's development throughout the pregnancy.</div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq3">Is it common to have irregular periods?</a>
-                    </h4>
-                </div>
-                <div id="faq3" class="panel-collapse collapse">
-                    <div class="panel-body">Yes, it’s common to have irregular periods, especially in the first few years after puberty or as you approach menopause. Factors like stress, weight changes, exercise, and hormonal imbalances can also cause irregular periods. However, if your periods are consistently irregular or you experience other symptoms, like heavy flow or less flow, it’s a good idea to see a gynecologist.</div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq4">Are irregular periods normal?</a>
-                    </h4>
-                </div>
-                <div id="faq4" class="panel-collapse collapse">
-                    <div class="panel-body">Occasional irregular cycles are common, but persistent irregularity could indicate hormonal imbalance, PCOS, or other conditions.</div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq5">Do irregular periods mean infertility?</a>
-                    </h4>
-                </div>
-                <div id="faq5" class="panel-collapse collapse">
-                    <div class="panel-body">Irregular periods don't necessarily mean infertility, but they can sometimes indicate underlying issues like hormonal imbalances or conditions like PCOS (Polycystic Ovary Syndrome) that may affect fertility. If you're concerned about infertility, it’s a good idea to consult a gynecologist to identify the cause and explore treatment options.</div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq6">Can women suffering from PCOS get pregnant?</a>
-                    </h4>
-                </div>
-                <div id="faq6" class="panel-collapse collapse">
-                    <div class="panel-body">Yes, women with PCOS can get pregnant, but they may face challenges due to irregular ovulation. With treatment regulate ovulation, many women with PCOS can successfully conceive</div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq7">What is the test for infertility evaluation?</a>
-                    </h4>
-                </div>
-                <div id="faq7" class="panel-collapse collapse">
-                    <div class="panel-body">Infertility evaluation typically involves ovulation tests, hormone testing, semen analysis, ultrasound, and sometimes HSG or laparoscopy to assess reproductive health.</div>
-                </div>
-            </div>
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq8">What is the best postpartum care?</a>
-                    </h4>
-                </div>
-                <div id="faq8" class="panel-collapse collapse">
-                    <div class="panel-body">The best postpartum care includes regular check-ups, monitoring physical and emotional health, breastfeeding support, and guidance on nutrition, exercise, and family planning. It's important to address any concerns early for a smooth recovery.</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Footer-->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <h3 style="color: #f20790">Our Timing</h3>
-                    <p>Monday - Saturday</p>
-                    <p>Morning &nbsp &nbsp10 AM - 1 PM</p>
-                    <p>Evening &nbsp &nbsp6 PM - 8 PM</p>
-                    <img src="Images/Logo1.png" alt="Logo" class="efg"> 
-                </div>
-                <div class="col-md-3">
-                    <h3 style="color: #f20790">Our Services</h3>
-                    <a href= "#services" class="bed">General Gyneacological Care</a><br>
-                    <a href= "#services" class="bed">Pregnancy and Reproductive Health</a><br>
-                    <a href= "#services" class="bed">Hormonal and Menopause Care</a><br>
-                    <a href= "#services" class="bed">Gynaecological Conditions and Treatments</a>
-                </div>
-                <div class="col-md-3">
-                    <h3 style="color: #f20790">Address</h3>
-                    <p>122A, ground floor, Green Enclave Rd, near EcoKids school,<br>
-                        Badal Colony, Zirakpur, Punjab 140603</p>
-                    <h3 style="color: #f20790">Phone Number</h3>
-                    <a href="tel:7347081693">+91 73470-81693</a>
-                </div>
-                <div class="col-md-3 text-center">
-                    <h3 style="color: #f20790">Map</h3>
-                    <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3432.5092429054475!2d76.81295407557711!3d30.647785574625328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390feb308c82c275%3A0x99b28bcf2dd96c72!2sBest%20Gynaecologist%20In%20Zirakpur%20%7C%20Dr%20Ritu%20Bhandari!5e0!3m2!1sen!2sin!4v1737196656776!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <h4 style="color: #f20790">On Sunday Appointments Only</h4> 
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/drritubhandari/" target="_blank">
-                            <img src="Images/Social Media/instagram.png" alt="Instagram Icon" style="width: 28px; height: 28px;">
-                        </a>
-                        <a href="https://www.facebook.com/womencarecliniczirakpur" target="_blank">
-                            <img src="Images/Social Media/facebook.png" alt="Facebook Icon" style="width: 24px; height: 24px;">
-                        </a>
-                    </div>
-                    <p>Copyright © 2025 || Women Care Clinic</p>
-                </div>
-            </div>
+            <div class="footer-bottom">Copyright © 2025 Women Care Clinic. All rights reserved.</div>
         </div>
     </footer>
 
+    <!-- WhatsApp -->
+    <a class="whatsapp-float" href="https://wa.link/mw8ora" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.5.7 4.9 2 7L3 29l6.5-2.2c2 1.1 4.2 1.6 6.5 1.6 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm0 23.2c-2 0-3.9-.5-5.6-1.6l-.4-.2-3.9 1.3 1.3-3.7-.3-.4c-1.2-1.8-1.8-3.8-1.8-5.9C5.3 9.9 10.1 5.1 16 5.1s10.7 4.8 10.7 10.6S21.9 26.2 16 26.2zm5.9-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6-.1-.2-.7-1.8-1-2.4-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.7s1.2 3.1 1.3 3.3c.2.2 2.3 3.5 5.5 4.9.8.3 1.4.5 1.8.7.8.2 1.5.2 2 .1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+    </a>
+
+    <!-- Appointment modal -->
     <div class="appointment-modal" id="appointmentModal" role="dialog" aria-modal="true" aria-labelledby="appointmentModalTitle" hidden>
         <div class="appointment-modal-panel">
             <button class="appointment-modal-close" type="button" aria-label="Close appointment form">&times;</button>
@@ -638,12 +426,12 @@
             <p>Share your details and the clinic will contact you shortly.</p>
             <form class="appointment-modal-form" action="form.php" method="post">
                 <label for="appointmentName">Name</label>
-                <input id="appointmentName" name="name" type="text" required>
+                <input id="appointmentName" name="name" type="text" autocomplete="name" required>
                 <label for="appointmentPhone">Phone number</label>
-                <input id="appointmentPhone" name="phone" type="tel" required>
+                <input id="appointmentPhone" name="phone" type="tel" autocomplete="tel" required>
                 <label for="appointmentEmail">Email</label>
-                <input id="appointmentEmail" name="email" type="email" required>
-                <button type="submit">Submit Request</button>
+                <input id="appointmentEmail" name="email" type="email" autocomplete="email" required>
+                <button class="btn btn-primary" type="submit">Submit Request</button>
             </form>
         </div>
     </div>

@@ -3,8 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const header = document.querySelector(".site-header");
     const nav = document.querySelector("#siteNav");
     const navToggle = document.querySelector(".nav-toggle");
-    const navItem = document.querySelector(".nav-item");
-    const navTrigger = navItem?.querySelector(".nav-trigger");
+    const navItems = [...document.querySelectorAll(".nav-item")];
 
     const closeNav = () => {
         if (!nav || !navToggle) return;
@@ -13,10 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
         navToggle.setAttribute("aria-label", "Open menu");
     };
 
-    const closeServices = () => {
-        if (!navItem || !navTrigger) return;
-        navItem.classList.remove("open");
-        navTrigger.setAttribute("aria-expanded", "false");
+    const closeDropdowns = () => {
+        navItems.forEach((item) => {
+            item.classList.remove("open");
+            item.querySelector(".nav-trigger")?.setAttribute("aria-expanded", "false");
+        });
     };
 
     if (nav && navToggle) {
@@ -24,29 +24,36 @@ document.addEventListener("DOMContentLoaded", function () {
             const isOpen = nav.classList.toggle("open");
             navToggle.setAttribute("aria-expanded", String(isOpen));
             navToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
-            if (!isOpen) closeServices();
+            if (!isOpen) closeDropdowns();
         });
     }
 
-    if (navItem && navTrigger) {
-        navTrigger.addEventListener("click", (event) => {
+    navItems.forEach((navItem) => {
+        const navTrigger = navItem.querySelector(".nav-trigger");
+        navTrigger?.addEventListener("click", (event) => {
             event.stopPropagation();
+            navItems.forEach((item) => {
+                if (item !== navItem) {
+                    item.classList.remove("open");
+                    item.querySelector(".nav-trigger")?.setAttribute("aria-expanded", "false");
+                }
+            });
             const isOpen = navItem.classList.toggle("open");
             navTrigger.setAttribute("aria-expanded", String(isOpen));
         });
-    }
+    });
 
     // Close menus when a link is chosen, on outside click, or on Escape.
     nav?.querySelectorAll("a").forEach((link) => {
         link.addEventListener("click", () => {
-            closeServices();
+            closeDropdowns();
             closeNav();
         });
     });
 
     document.addEventListener("click", (event) => {
         if (header && !header.contains(event.target)) {
-            closeServices();
+            closeDropdowns();
             closeNav();
         }
     });
@@ -98,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
             closeModal();
             return;
         }
-        closeServices();
+        closeDropdowns();
         closeNav();
     });
 });
